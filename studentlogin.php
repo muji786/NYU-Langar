@@ -37,6 +37,14 @@ background:#fbfbfb !important;
 	.txt-white{
 	color:white !important;
 	}
+	.buttonLink{
+		display: inline-block;
+		padding: 5px 10px;
+		border: 1px solid #4e1887;
+		background-color: #4e1887;
+		color: white;
+		text-decoration: none;
+	}
 	.content,.sidenav{
 	padding-top:10px;
 	}
@@ -76,7 +84,9 @@ background:#fbfbfb !important;
 			
 		<h4>Welcome to the NYU Student Portal.</h4>
 		<h4>Please login to continue!</h4>
-		<a href="studentlogin.php" class="text-black">Student Login</a>
+		<a href="studentlogin.php" class="buttonLink">Student Login</a>
+		<a href="adminlogin.php" class="buttonLink">Admin Login</a>
+
 		<br><br>
 		<form action="" method="post">
 			<input type="email" name="email" placeholder="Enter Email" required class="form-control"><br>
@@ -84,8 +94,7 @@ background:#fbfbfb !important;
 			<input type="submit" name="login" value="LOGIN" class="bg-pink txt-white btn btn-lg">
 		</form>
 		<br>
-		
-		<a href="adminlogin.php" class="text-black">Admin Login</a>
+
 		<?php if (isset($_POST["login"])) {
     $sql =
       "select * from student where email='" .
