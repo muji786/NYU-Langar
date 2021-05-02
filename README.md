@@ -23,10 +23,10 @@ donation_center@nyu.edu / 123
 ------------------------
 User Login Accounts:
 ------------
-1)Ahhmad Arshad
+1)Ahmad Arshad
 ------------
 asa200@nyu.edu / 123
-------------
+----------------
 2) Dan O Sullivan
 ------------
 dbo3@nyu.edu / 123 
