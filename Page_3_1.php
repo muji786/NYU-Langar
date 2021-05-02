@@ -263,8 +263,6 @@ background:#fbfbfb !important;
 		
 	<br><br>
 	</div>
-	
-
 </div>
 </div>
 </body>

@@ -1,24 +1,17 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 4.9.7
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 02, 2021 at 05:38 PM
--- Server version: 10.4.18-MariaDB
--- PHP Version: 7.4.16
+-- Host: localhost:8889
+-- Generation Time: May 02, 2021 at 01:24 PM
+-- Server version: 5.7.32
+-- PHP Version: 7.1.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
 SET time_zone = "+00:00";
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
 --
--- Database: `donation`
+-- Database: `langar`
 --
 
 -- --------------------------------------------------------
@@ -39,9 +32,9 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `email`, `name`, `pass`) VALUES
-(1, 'islamic_center@nyu.com', 'Islamic Center', '123'),
-(2, 'xyz_center@nyu.com', 'Xyz Center', '123'),
-(3, 'donation_center@nyu.com', 'Donation Center', '123');
+(92345681, 'islamic_center@nyu.edu', 'Islamic Center', '123'),
+(92345682, 'xyz_center@nyu.edu', 'Xyz Center', '123'),
+(92345683, 'donation_center@nyu.edu', 'Donation Center', '123');
 
 -- --------------------------------------------------------
 
@@ -68,7 +61,9 @@ INSERT INTO `donatedmeals` (`id`, `sid`, `center`, `mealtype`, `date`, `time`, `
 (100, 1, 'Islamic Center', 'meal', '2021-05-01', '11:02:45', 0),
 (101, 1, 'Xyz Center', 'meal', '2021-05-01', '11:02:45', 0),
 (102, 2, 'Xyz Center', 'meal', '2021-05-01', '11:02:45', 1),
-(103, 1, 'Islamic Center', 'meal', '2021-05-02', '12:48:22', 0);
+(103, 1, 'Islamic Center', 'meal', '2021-05-02', '12:48:22', 0),
+(104, 1, 'Islamic Center', 'meal', '2021-05-02', '01:04:36', 1),
+(105, 1, 'Islamic Center', 'meal', '2021-05-02', '01:06:27', 1);
 
 -- --------------------------------------------------------
 
@@ -88,8 +83,8 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`id`, `name`, `email`, `password`) VALUES
-(1, 'Ahmeda', 'ahmed@nyu.com', '123'),
-(2, 'Ismail', 'ismail@nyu.com', '123');
+(12345679, 'Ahmad Arshad', 'asa200@nyu.edu', '123'),
+(12345680, 'Dan O Sullivan', 'dbo3@nyu.edu', '123');
 
 --
 -- Indexes for dumped tables
@@ -121,21 +116,16 @@ ALTER TABLE `student`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92345678;
 
 --
 -- AUTO_INCREMENT for table `donatedmeals`
 --
 ALTER TABLE `donatedmeals`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=104;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
 
 --
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12345678;

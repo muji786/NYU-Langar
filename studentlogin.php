@@ -74,7 +74,7 @@ background:#fbfbfb !important;
 	<div class="col-sm-4 content-body">
 		<center>
 			
-		<h4>Welcome to the NYU Portal.</h4>
+		<h4>Welcome to the NYU Student Portal.</h4>
 		<h4>Please login to continue!</h4>
 		<a href="studentlogin.php" class="text-black">Student Login</a>
 		<br><br>
@@ -85,7 +85,7 @@ background:#fbfbfb !important;
 		</form>
 		<br>
 		
-		<a href="adminlogin.php" class="">Admin Login</a>
+		<a href="adminlogin.php" class="text-black">Admin Login</a>
 		<?php if (isset($_POST["login"])) {
     $sql =
       "select * from student where email='" .

@@ -100,8 +100,7 @@ background:#fbfbfb !important;
       header("location:https://twitter.com/intent/tweet?text=" . $_GET["text"]);
     }
   } ?>
-		
-		
+
 		<?php
   $sql =
     "Select * from donatedmeals where center='" .
@@ -126,15 +125,10 @@ background:#fbfbfb !important;
 
       $tweet =
         $rw["name"] .
-        ' just donated his meal.
+        ' just donated a meal.
 		  ' .
         $qx .
-        ' of NYU Students have donated their meals.
-		
-Thankyou for sharing your meal with the ones who need the most.
-
- ~ The best among you are those who bring greatest benefits to many others. ~ ';
-
+        " of NYU Students have donated their meals so far. Thankyou for sharing. ~ The best among you are those who bring greatest benefits to many others. ~ ";
       echo '<tr class="">
 				<td>' .
         $rw["name"] .
@@ -143,7 +137,7 @@ Thankyou for sharing your meal with the ones who need the most.
 				<td>';
       if ($row["status"] == "1") {
         echo '
-				<a   href="#" class="btn bg-pink txt-white disabled">Use Meal</a>';
+				<a   href="#" class="btn bg-pink txt-white disabled">Used</a>';
       } else {
         echo '
 				<a   href="?&id=' .

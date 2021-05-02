@@ -92,10 +92,10 @@ background:#fbfbfb !important;
 		
 	<img src="inc/heart.png" width="100%" height="180px">
 	<h3 class="txt-white">Thanks For Your Donation!</h3>
-	<h4 class="txt-white">We are glad to see you helping out the needy. You can donate more meals, or you can visit our website.</h4>
+	<h4 class="txt-white">You can donate more meals, or you can logoff.</h4>
 		<br><br><br>
 		<h3><b>
-		<a href="Page_3_1.php" class="txt-white btn "><- Donate More Meals</a>
+		<a href="Page_3_1.php" class="txt-white btn ">⬅ Donate More Meals</a>
 		</b></h3>	
 			</center>
 		<br><br>

@@ -84,7 +84,7 @@ background:#fbfbfb !important;
 			<input type="submit" name="login" value="LOGIN" class="bg-pink txt-white btn btn-lg">
 		</form><br>
 		
-		<a href="adminlogin.php" class="">Admin Login</a>
+		<a href="adminlogin.php" class="text-black">Admin Login</a>
 		<?php if (isset($_POST["login"])) {
     $sql =
       "select * from admin where email='" .

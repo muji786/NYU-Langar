@@ -82,8 +82,8 @@ background:#fbfbfb !important;
 		<center>
 			<img src="inc/bucket.png" width="100%">
 		<br>
-		<h4>Step 2: Done! Your meal will be donated</h4>
-		<h4>Your meal will be donated and will be delivered to the poor on your behalf.</h4>
+		<h3>Step 1: Click on Donate Now to donate meal</h3>
+		<h4>Your meal swipe will be used to provide food security to NYU Community.</h4>
 		<a href="Page_3_1.php" class="btn btn-lg bg-pink txt-white font-weight-bold"><b>DONATE NOW</b></a>
 		<br><br>
 		</center>
