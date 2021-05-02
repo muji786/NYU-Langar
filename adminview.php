@@ -128,7 +128,9 @@ background:#fbfbfb !important;
         ' just donated a meal.
 		  ' .
         $qx .
-        " of NYU Students have donated their meals so far. Thankyou for sharing. ~ The best among you are those who bring greatest benefits to many others. ~ ";
+        " kind souls have donated their meals to " .
+        $_SESSION["name"] .
+        " so far. Thank you for sharing. ~ The best amongst you are those who are most beneficial to others. ~ #EndHunger #NYULangar #PowerofGiving ";
       echo '<tr class="">
 				<td>' .
         $rw["name"] .
