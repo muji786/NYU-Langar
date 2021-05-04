@@ -1,5 +1,7 @@
 # NYU-Langar
 
+Install in any MAMP environment and import donation.sql into mysql
+
 #### User login Link: /studentlogin.php
 
 #### Admin login Link: /adminlogin.php
