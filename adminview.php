@@ -93,10 +93,11 @@ background:#fbfbfb !important;
 		
 		<br><br>
 		<table class="table table-strip table-bordered">
-		<tr class="bg-pink txt-white"><th>Student Name</th><th>Meals</th><th>Status</th><th>Time<br>Date</th><tr>
+		<tr class="bg-pink txt-white"><th>Student Name</th><th>Meals</th><th>Status</th><th>Time</th><th>Date</th><tr>
 		<?php if (isset($_GET["text"])) {
     $upd = "Update donatedmeals set status='1' where id='" . $_GET["id"] . "'";
     if ($conn->query($upd)) {
+      //echo 'window.open("https://twitter.com/intent/tweet?text=". $_GET["text"])';
       header("location:https://twitter.com/intent/tweet?text=" . $_GET["text"]);
     }
   } ?>
@@ -152,10 +153,9 @@ background:#fbfbfb !important;
       echo '</td>
 				<td>' .
         $row["time"] .
-        "<br>" .
+        "</td><td>" .
         $row["date"] .
         '</td>
-
 </tr>';
     }
   }
